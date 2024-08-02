@@ -1,0 +1,118 @@
+*{
+    margin: 0 ;
+    padding: 0;
+box-sizing: border-box;
+font-family: "Roboto", sans-serif;
+}
+ body {
+    background-color: rgba(53, 94, 59, 0.85);
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+  }
+  .container {
+   width: 50%;
+    color: #ffff;
+    background-color: rgba(41, 48, 4, 0.534);
+    margin:10px 20px;
+    padding:20px;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 0.5em 0.5em 0.5em 0.2em bisque;
+  }
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  .insert:nth-child(2n){
+    /* justify-content: end; */
+  }
+  .insert{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+    padding: 15px;
+  }
+  .insert label{
+    width: 60%;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+  }
+  .insert input{
+    height:40px;
+    width:100%;
+    border-radius: 10px;
+outline: none;
+border:1px solid grey;
+padding:0 10px;
+  }
+  .gender-title{
+    color: #ffff;
+    font-size: 24px;
+    font-weight: 400;
+  }
+ .radio{
+margin:15px 0;
+color: #ffff;
+ }
+ .radio label{
+    padding: 0 20px 0 5px;
+
+ }
+ .radio label,
+ .radio input,
+ .submit input{
+    cursor: pointer;
+ }
+ .submit{
+    margin-top: 40px;
+ }
+ .submit input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background:linear-gradient(to right,#1F456E,#1F456E,#00316E,#151E3D,#001B3A);
+    color: #ffff;
+ }
+  h2{
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    margin:10px 0;
+  }
+ 
+ 
+@media (max-width: 600px) {
+    .container {
+      min-width: 280px;
+    }
+    .insert{
+        margin-bottom: 12px;
+        width:100%;
+    }
+    .insert:nth-child(2n){
+        justify-content: space-between;
+    }
+    .radio{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+    .main{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .main::-webkit-scrollbar{
+width:0;
+    }
+}

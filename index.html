@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <h2 class="formtitle">Register Here</h2> 
+   <form action="" method="post">
+    <div class="main">
+    <div class="insert">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br>
+    </div>
+    <div class="insert">
+        <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required><br>
+    </div>
+    <div class="insert">
+        <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    </div>
+    <div class="insert">
+        <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    </div>
+    <div class="insert">
+        <label for="phone">Phone:</label>
+    <input type="phone" id="phone" name="phone" required pattern="[0-9]{8,12}">
+    </div>
+    <div class="insert">
+        <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{6,8}">
+    </div>
+    </div>
+    <div class="gender">
+        <span class="gender-title">  Gender:</span>
+        <div class="radio">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender" value="others" required>
+            <label for="others">Others</label>
+        </div>
+    </div>
+    <div class="submit">
+        <input type="submit" value="Submit">
+    </div>
+   </form>
+   </div>
+</body>
+</html>
